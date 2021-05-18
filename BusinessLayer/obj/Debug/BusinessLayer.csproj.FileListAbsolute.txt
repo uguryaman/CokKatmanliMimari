@@ -1,0 +1,12 @@
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.pdb

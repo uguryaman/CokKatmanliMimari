@@ -1,0 +1,17 @@
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\System.Data.SqlClient.xml

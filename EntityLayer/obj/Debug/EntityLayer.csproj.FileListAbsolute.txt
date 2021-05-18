@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\hp\source\repos\KatmanlıMvc\EntityLayer\bin\Debug\System.Data.SqlClient.xml
