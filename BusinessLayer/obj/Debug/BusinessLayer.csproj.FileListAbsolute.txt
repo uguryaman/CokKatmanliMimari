@@ -10,3 +10,13 @@ C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.cspr
 C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityLayer.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\System.Data.SqlClient.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\System.Data.SqlClient.xml
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\hp\source\repos\KatmanlıMvc\BusinessLayer\bin\Debug\FluentValidation.xml

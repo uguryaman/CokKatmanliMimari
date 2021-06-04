@@ -15,3 +15,5 @@ C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.
 C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\System.Data.SqlClient.dll
 C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\System.Data.SqlClient.xml
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\FluentValidation.dll
+C:\Users\hp\source\repos\KatmanlıMvc\DataAccessLayer\bin\Debug\FluentValidation.xml
