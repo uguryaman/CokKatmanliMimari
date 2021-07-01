@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68DA9DAF-B677-4FB4-830D-339773DB4310}</ProjectGuid>
+    <ProjectGuid>{751049CE-0658-48D2-9984-0831EAAD9EA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EntityLayer</RootNamespace>
@@ -40,9 +40,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentValidation.10.1.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -58,10 +55,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Concreate\About.cs" />
+    <Compile Include="Concreate\Admin.cs" />
     <Compile Include="Concreate\Category.cs" />
+    <Compile Include="Concreate\Contact.cs" />
     <Compile Include="Concreate\Content.cs" />
     <Compile Include="Concreate\Heading.cs" />
+    <Compile Include="Concreate\ImageFile.cs" />
+    <Compile Include="Concreate\Message.cs" />
     <Compile Include="Concreate\Writer.cs" />
+    <Compile Include="Concreate\Ability.cs" />
+    <Compile Include="DTOs\AdminDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

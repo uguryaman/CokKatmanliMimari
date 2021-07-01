@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7CC1F417-5C3B-491E-AEC0-BEF5378F49D8}</ProjectGuid>
+    <ProjectGuid>{E5F2A10C-5B5C-4158-8295-06044FAA7A00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccessLayer</RootNamespace>
@@ -40,9 +40,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
-      <HintPath>..\packages\FluentValidation.10.1.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -57,33 +54,149 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAbilityDal.cs" />
     <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concreate\Context.cs" />
     <Compile Include="Concreate\Repositories\GenericRepository.cs" />
+    <Compile Include="EntityFramework\EfAbilityDal.cs" />
     <Compile Include="EntityFramework\EfAboutDal.cs" />
+    <Compile Include="EntityFramework\EfAdminDal.cs" />
     <Compile Include="EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
-    <Compile Include="EntityFramework\EfWritterDal.cs" />
+    <Compile Include="EntityFramework\EfImageDal.cs" />
+    <Compile Include="EntityFramework\EfMessageDal.cs" />
+    <Compile Include="EntityFramework\EfWriterDal.cs" />
+    <Compile Include="Migrations\202106141753574_new.cs" />
+    <Compile Include="Migrations\202106141753574_new.designer.cs">
+      <DependentUpon>202106141753574_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106141816196_lk.cs" />
+    <Compile Include="Migrations\202106141816196_lk.designer.cs">
+      <DependentUpon>202106141816196_lk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106222116247_nj.cs" />
+    <Compile Include="Migrations\202106222116247_nj.designer.cs">
+      <DependentUpon>202106222116247_nj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106222129029_hvbj.cs" />
+    <Compile Include="Migrations\202106222129029_hvbj.designer.cs">
+      <DependentUpon>202106222129029_hvbj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106222340389_admin.cs" />
+    <Compile Include="Migrations\202106222340389_admin.designer.cs">
+      <DependentUpon>202106222340389_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106240349420_sertifika2.cs" />
+    <Compile Include="Migrations\202106240349420_sertifika2.designer.cs">
+      <DependentUpon>202106240349420_sertifika2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106240416033_hata.cs" />
+    <Compile Include="Migrations\202106240416033_hata.designer.cs">
+      <DependentUpon>202106240416033_hata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106241420416_statusabout.cs" />
+    <Compile Include="Migrations\202106241420416_statusabout.designer.cs">
+      <DependentUpon>202106241420416_statusabout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250211525_salt.cs" />
+    <Compile Include="Migrations\202106250211525_salt.designer.cs">
+      <DependentUpon>202106250211525_salt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250410066_hş.cs" />
+    <Compile Include="Migrations\202106250410066_hş.designer.cs">
+      <DependentUpon>202106250410066_hş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250414360_salt2.cs" />
+    <Compile Include="Migrations\202106250414360_salt2.designer.cs">
+      <DependentUpon>202106250414360_salt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250448308_saltson.cs" />
+    <Compile Include="Migrations\202106250448308_saltson.designer.cs">
+      <DependentUpon>202106250448308_saltson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106280244093_mesaje.cs" />
+    <Compile Include="Migrations\202106280244093_mesaje.designer.cs">
+      <DependentUpon>202106280244093_mesaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106282305483_mesah.cs" />
+    <Compile Include="Migrations\202106282305483_mesah.designer.cs">
+      <DependentUpon>202106282305483_mesah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107010312169_ststusmesaj.cs" />
+    <Compile Include="Migrations\202107010312169_ststusmesaj.designer.cs">
+      <DependentUpon>202107010312169_ststusmesaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202106141753574_new.resx">
+      <DependentUpon>202106141753574_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106141816196_lk.resx">
+      <DependentUpon>202106141816196_lk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106222116247_nj.resx">
+      <DependentUpon>202106222116247_nj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106222129029_hvbj.resx">
+      <DependentUpon>202106222129029_hvbj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106222340389_admin.resx">
+      <DependentUpon>202106222340389_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106240349420_sertifika2.resx">
+      <DependentUpon>202106240349420_sertifika2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106240416033_hata.resx">
+      <DependentUpon>202106240416033_hata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106241420416_statusabout.resx">
+      <DependentUpon>202106241420416_statusabout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250211525_salt.resx">
+      <DependentUpon>202106250211525_salt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250410066_hş.resx">
+      <DependentUpon>202106250410066_hş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250414360_salt2.resx">
+      <DependentUpon>202106250414360_salt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250448308_saltson.resx">
+      <DependentUpon>202106250448308_saltson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106280244093_mesaje.resx">
+      <DependentUpon>202106280244093_mesaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106282305483_mesah.resx">
+      <DependentUpon>202106282305483_mesah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107010312169_ststusmesaj.resx">
+      <DependentUpon>202107010312169_ststusmesaj.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{751049ce-0658-48d2-9984-0831eaad9ea8}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
-      <Project>{68da9daf-b677-4fb4-830d-339773db4310}</Project>
-      <Name>EntityLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

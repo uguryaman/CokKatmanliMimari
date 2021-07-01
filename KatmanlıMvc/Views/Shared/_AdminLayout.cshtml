@@ -41,8 +41,6 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-         
-
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
@@ -59,9 +57,9 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                             with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link ">
+    with font-awesome or any other icon font library -->
+                        <li class="nav-item ">
+                            <a href="~/AdminCategory/Index" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Kategoriler
@@ -70,7 +68,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="~/Tema/Tema1/pages/widgets.html" class="nav-link">
+                            <a href="~/Heading/Index" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Başlıklar
@@ -78,7 +76,7 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                            <a href="~/Writer/Index" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Yazarlar
@@ -86,6 +84,29 @@
                                 </p>
                             </a>
                         </li>
+                        @if (User.IsInRole("A"))
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="~/Message/Index" class="nav-link">
+                                    <i class="nav-icon fas fa-tree"></i>
+                                    <p>
+                                        İletişim & Mesajlar
+                                    </p>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="~/Contact/Index" class="nav-link">
+                                    <i class="nav-icon fas fa-tree"></i>
+                                    <p>
+                                        İletişim & Mesajlar
+                                    </p>
+                                </a>
+                            </li>
+                        }
+                       
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-chart-pie"></i>
@@ -115,14 +136,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>
-                                    İletişim &Aacute; Mesajlar
-                                </p>
-                            </a>
-                        </li>
+
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
@@ -132,10 +146,10 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                            <a href="/About/Index" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Tables
+                                    Hakkımızda
                                 </p>
                             </a>
 
@@ -149,22 +163,27 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                    Galeri
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-envelope"></i>
-                                <p>
-                                    Hata Sayfaları
-                                </p>
-                            </a>
-                        </li>
+                        @if (User.IsInRole("A"))
+                        {
+                            <li class="nav-item">
+                                <a href="~/Galery/Index" class="nav-link">
+                                    <i class="nav-icon far fa-image"></i>
+                                    <p>
+                                        Galeri
+                                    </p>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon far fa-envelope"></i>
+                                    <p>
+                                        Hata Sayfaları
+                                    </p>
+                                </a>
+                            </li>
+                        }
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
@@ -173,6 +192,41 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Yetenek
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="~/Sertifika/Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Yetenekler</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Sertifika/YetenekEkle" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Yetenek Ekle</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        @if (User.IsInRole("A"))
+                        {
+                            <li class="nav-item has-treeview">
+                                <a href="~/Admin/AddAdmin" class="nav-link">
+                                    <i class="nav-icon fas fa-tree"></i>
+                                    <p>
+                                        Admin Ekle
+                                    </p>
+                                </a>
+                            </li>
+                        }
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-plus-square"></i>
@@ -192,7 +246,7 @@
         <!-- Content Wrapper. Contains page content -->
 
         <div class="content-wrapper">
-      
+
             <!-- Main content -->
             <section class="content">
                 @RenderBody()
@@ -218,7 +272,7 @@
     <script src="~/Tema/Tema1/plugins/jqvmap/jquery.vmap.min.js"></script>
     <script src="~/Tema/Tema1/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
     <!-- jQuery Knob Chart -->
-    <script src=~/Tema/Tema1/"plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="~/Tema/Tema1/plugins/jquery-knob/jquery.knob.min.js"></script>
     <!-- daterangepicker -->
     <script src="~/Tema/Tema1/plugins/moment/moment.min.js"></script>
     <script src="~/Tema/Tema1/plugins/daterangepicker/daterangepicker.js"></script>
@@ -236,4 +290,5 @@
     <script src="~/Tema/Tema1/dist/js/demo.js"></script>
 </body>
 </html>
+
 

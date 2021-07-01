@@ -1,0 +1,25 @@
+﻿
+
+
+<div class="modal" id="modalAdd">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+            </div>
+            @using (Html.BeginForm("HeadingAdd", "Heading", FormMethod.Post))
+            {
+                @Html.Label("Başlık")
+
+                @*<br />
+                    @Html.Label("Categori")
+                    @Html.DropDownList("CategoryID", (List<SelectListItem>)ViewBag.categories, htmlAttributes: new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Yazar")
+                    @Html.DropDownList("WriterID", (List<SelectListItem>)ViewBag.Writers, htmlAttributes: new { @class = "form-control" })
+                    <br />*@
+                <button class="btn btn-info">Kaydet</button>
+            }
+        </div>
+    </div>
+</div>

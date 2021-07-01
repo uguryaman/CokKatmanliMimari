@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concreate;
 using BusinessLayer.ValidationRules;
+using DataAccessLayer.Concreate;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concreate;
 using FluentValidation.Results;
@@ -11,6 +12,7 @@ using System.Web.Mvc;
 
 namespace KatmanlıMvc.Controllers
 {
+    [Authorize]
     public class AdminCategoryController : Controller
     {
         // GET: AdminCategory
@@ -23,8 +25,9 @@ namespace KatmanlıMvc.Controllers
         [HttpGet]
         public ActionResult AddCategory()
         {
-            //var CategoryValues = cm.GetList();
+
             return View();
+
         }
         [HttpPost]
         public ActionResult AddCategory(Category p)
@@ -45,12 +48,31 @@ namespace KatmanlıMvc.Controllers
             }
             return View();
         }
+
         public ActionResult DeleteCAtegory(int id)
         {
             var categoryValue = cm.GetByID(id);
             cm.CategoryDelete(categoryValue);
-           
+
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult EditCategory(int id)
+        {
+            var catValue = cm.GetByID(id);
+            return View(catValue);
+        }
+        [HttpPost]
+        public ActionResult EditCategory(Category p)
+        {
+            cm.CategoryEdit(p);
             return RedirectToAction("Index");
         }
     }
 }
+
+  //< customErrors mode = "On" >
+ 
+  //     < error statusCode = "404" redirect = "~/ErrorPage/Page404" />
+    
+  //      </ customErrors >

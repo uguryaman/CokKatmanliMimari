@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concreate.Category
+
+@{
+    ViewBag.Title = "EditCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>EditCategory</h2>
+
+<div class="container">
+    @using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.HiddenFor(x => x.CategoryID)
+
+            @Html.Label("Kategori adı")
+            @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.CategoryName)
+            <br /><br />
+            @Html.Label("Kategori Açıklama")
+            @Html.TextAreaFor(x => x.CategoryDescription, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.CategoryDescription)
+            <br /><br />
+
+            @Html.Label("Durum")
+            @Html.CheckBoxFor(x => x.CategoryStatus)
+            <br /><br />
+
+            <button class="btn btn-info">Kaydet</button>
+            <br />
+            @Html.ActionLink("Geri Dön", "Index")
+        </div>
+    }
+</div>

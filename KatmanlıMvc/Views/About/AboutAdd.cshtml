@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concreate.About
+
+
+<div class="container-md">
+    <div class="modal " id="Modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                @using (Html.BeginForm("AboutAdd", "About", FormMethod.Post))
+                {
+                    @Html.Label("Hakkımda Metin 1")
+                    <input type="text" name="AboutDetails1" class="form-control" />
+                    <br />
+                    @Html.Label("Hakkımda Metin 2")
+                    <input type="text" name="AboutDetails2" class="form-control" />
+                    <br />
+                    @Html.Label("Hakkımda Resim 1")
+                    <input type="text" name="AboutImage1" class="form-control" />
+                    <br />
+                    @Html.Label("Hakkımda Resim 1")
+                    <input type="text" name="AboutImage2" class="form-control" />
+                    <br />
+                    @Html.Label("Durum :")
+                    
+                    @Html.CheckBoxFor(Model=>Model.AboutStatus)
+                    <br />
+                    <button class="btn btn-info">Kaydet</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

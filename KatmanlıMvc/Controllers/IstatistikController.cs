@@ -20,7 +20,7 @@ namespace KatmanlıMvc.Controllers
             var deger2 = c.Headings.Count(x => x.Category.CategoryName == "yazılım").ToString();
             ViewBag.d2 = deger2;
 
-            var deger3 = c.Writers.Where(x => x.WriterName.Contains("a")).Count();                
+            var deger3 = c.Writers.Where(x => x.WriterName.Contains("a")).Count();
             ViewBag.d3 = deger3;
 
             var deger4 = c.Headings.GroupBy(x => x.Category.CategoryName).OrderByDescending(y => y.Count()).Select(z => z.Key).FirstOrDefault();
@@ -29,7 +29,7 @@ namespace KatmanlıMvc.Controllers
             var deger5 =(( c.Categories.Count(x => x.CategoryStatus == true))- (c.Categories.Count(x => x.CategoryStatus == false))).ToString();           
             ViewBag.d5 = deger5;
 
-          
+
             return View();
         }
     }

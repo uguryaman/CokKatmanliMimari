@@ -235,12 +235,12 @@
             Creates a scanner that works on a sequence of types.
             </summary>
         </member>
-        <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssembly(System.Reflection.Assembly)">
+        <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssembly(System.Reflection.Assembly,System.Boolean)">
             <summary>
             Finds all the validators in the specified assembly.
             </summary>
         </member>
-        <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+        <member name="M:FluentValidation.AssemblyScanner.FindValidatorsInAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean)">
             <summary>
             Finds all the validators in the specified assemblies
             </summary>
