@@ -18,17 +18,20 @@ namespace KatmanlıMvc.Controllers
         // GET: Message
         public ActionResult Index()
         {
-           var value= cm.GEtlistInbox();
-            ViewBag.messageCount = cm.GEtlistInbox().Count();
-            ViewBag.sendcount = cm.GEtlistSendbox().Count();
+            string p="admin@gmail.com";
+           var value= cm.GEtlistInbox(p);
+            ViewBag.messageCount = cm.GEtlistInbox(p).Count();
+            ViewBag.sendcount = cm.GEtlistSendbox(p).Count();
 
             return View(value);
         }
         public ActionResult SendBox()
         {
-            var value = cm.GEtlistSendbox();
-            ViewBag.sendcount = cm.GEtlistSendbox().Count();
-            ViewBag.messageCount = cm.GEtlistInbox().Count();
+            string p = "admin@gmail.com";
+
+            var value = cm.GEtlistSendbox(p);
+            ViewBag.sendcount = cm.GEtlistSendbox(p).Count();
+            ViewBag.messageCount = cm.GEtlistInbox(p).Count();
 
 
             return View(value);

@@ -23,9 +23,9 @@ namespace BusinessLayer.Concreate
             return _messageDal.Get(x => x.MessageID == id);
         }
 
-        public List<Message> GEtlistInbox()
+        public List<Message> GEtlistInbox(string p)
         {
-            return _messageDal.List(x=>x.ReceiverMail=="Admin@gmail.com");
+            return _messageDal.List(x=>x.ReceiverMail==p);
         }
 
         public List<Message> GetListByID(int id)
@@ -35,10 +35,10 @@ namespace BusinessLayer.Concreate
 
       
 
-        public List<Message> GEtlistSendbox()
+        public List<Message> GEtlistSendbox(string p)
         {
 
-            return _messageDal.List(x => x.SenderMail == "Admin@gmail.com");
+            return _messageDal.List(x => x.SenderMail == p);
         }
 
         public void MessageAdd(Message message)
@@ -52,6 +52,11 @@ namespace BusinessLayer.Concreate
         }
 
         public void MessageUpdate(Message message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Message> GetListByWriter()
         {
             throw new NotImplementedException();
         }

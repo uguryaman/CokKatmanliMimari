@@ -95,3 +95,7 @@ C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\FluentValidation.xml
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\SimpleCrypto.dll
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\BusinessLayer.dll.config
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\EntityLayer.dll.config
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.dll
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.Mvc.dll
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.xml
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.Mvc.xml

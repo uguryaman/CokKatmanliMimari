@@ -1,0 +1,31 @@
+﻿
+@model EntityLayer.Concreate.Heading
+
+@{
+    ViewBag.Title = "WriterHeadingAdd";
+    Layout = "~/Views/Shared/_WriterPanel.cshtml";
+}
+
+@using (Html.BeginForm("WriterHeadingEdit", "WriterPanel", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.HeadingID)
+    @Html.HiddenFor(x => x.Headingdate)
+    @Html.HiddenFor(x => x.Contents)
+    @Html.HiddenFor(x => x.WriterID)
+
+
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.HeadingName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Categori")
+    @Html.DropDownList("CategoryID", (List<SelectListItem>)ViewBag.categories, htmlAttributes: new { @class = "form-control" })
+    <br />
+    @Html.Label("Yazar")
+    @Html.DropDownList("WriterID", (List<SelectListItem>)ViewBag.Writers, htmlAttributes: new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+}
+
+
+
+

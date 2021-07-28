@@ -22,5 +22,6 @@ namespace KatmanlıMvc.Controllers
             var value = cm.GetById(id);
             return View(value);
         }
+        //public ActionResult Writer
     }
 }
