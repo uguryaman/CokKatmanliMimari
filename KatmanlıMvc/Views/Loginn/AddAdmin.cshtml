@@ -30,7 +30,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.AdminRole, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AdminRole, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.DropDownList("AdminRole", (List<SelectListItem>)ViewBag.vr, htmlAttributes: new { @class = "form-control" })
             </div>
         </div>
 

@@ -43,6 +43,26 @@ namespace KatmanlıMvc.Controllers
         [HttpGet]
         public ActionResult AddAdmin()
         {
+
+            List<SelectListItem> valueRole = new List<SelectListItem>()
+            {
+                new SelectListItem {
+                    Text="A",
+                    Value="A"
+                },
+                new SelectListItem
+                {
+                     Text="B",
+                    Value="B"
+                },
+                new SelectListItem
+                {
+                     Text="C",
+                    Value="C"
+                },
+
+            };
+            ViewBag.vr = valueRole;
             return View();
         }
         [HttpPost]
@@ -79,6 +99,43 @@ namespace KatmanlıMvc.Controllers
             FormsAuthentication.SignOut();
             Session.Abandon();
             return RedirectToAction("Index", "Default");
+        }
+        public ActionResult Admin()
+        {
+            var value = am.GEtlist();
+            return View(value);
+        }
+        [HttpGet]
+        public ActionResult AdminDüzenle(int id)
+        {
+
+            List<SelectListItem> valueRole = new List<SelectListItem>()
+            {
+                new SelectListItem {
+                    Text="A",
+                    Value="A"
+                },
+                new SelectListItem
+                {
+                     Text="B",
+                    Value="B"
+                },
+                new SelectListItem
+                {
+                     Text="C",
+                    Value="C"
+                },
+               
+            };
+            ViewBag.vr = valueRole;
+            var value = am.GetById(id);
+            return View(value);
+        }
+        [HttpPost]
+        public ActionResult AdminDüzenle(Admin p)
+        {
+            am.AdminUpdate(p);
+            return RedirectToAction("Admin");
         }
     }
 }

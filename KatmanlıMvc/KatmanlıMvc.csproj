@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.13.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.13.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -133,6 +136,7 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -145,6 +149,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
+    <Compile Include="Controllers\CalenderController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -162,6 +167,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HeadingClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\AdminRoleProvider.cs" />
   </ItemGroup>
@@ -176,12 +182,8 @@
     <Content Include="GaleriImage\Ankara.jpg" />
     <Content Include="GaleriImage\Antalya.jpg" />
     <Content Include="GaleriImage\Bursa.jpg" />
-    <Content Include="GaleriImage\Diyarbakır.jpg" />
-    <Content Include="GaleriImage\Samsun.jpg" />
-    <Content Include="GaleriImage\Sivas.jpg" />
     <Content Include="GaleriImage\Çanakkale.jpg" />
     <Content Include="GaleriImage\İstanbul.jpg" />
-    <Content Include="GaleriImage\İzmir.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2916,10 +2918,16 @@
     <Content Include="Views\Home\Vitrin.cshtml" />
     <Content Include="Tema\Vitrin\images\EkranGörüntüleri\desktop.ini" />
     <Content Include="Views\Content\GetAllContent.cshtml" />
+    <Content Include="Views\Heading\HeadingReports.cshtml" />
+    <Content Include="Views\Sertifika\YetenekDüzenle.cshtml" />
+    <Content Include="Views\Sertifika\YetenekEdit.cshtml" />
+    <Content Include="Views\Loginn\Admin.cshtml" />
+    <Content Include="Views\Loginn\AdminDüzenle.cshtml" />
+    <Content Include="Views\Calender\Index.cshtml" />
+    <Content Include="Views\Galery\ImageAdd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Gallery\" />
   </ItemGroup>
   <ItemGroup>

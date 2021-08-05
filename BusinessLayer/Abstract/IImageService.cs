@@ -10,9 +10,9 @@ namespace BusinessLayer.Abstract
     public interface IImageService
     {
         List<ImageFile> GEtlist();
-        void AboutAdd(ImageFile ımageFile);
-        void AboutDelete(ImageFile ımageFile);
-        void AboutUpdate(ImageFile ımageFile);
+        void ImageAdd(ImageFile ımageFile);
+        void ImageDelete(ImageFile ımageFile);
+        void ImageUpdate(ImageFile ımageFile);
         ImageFile GetById(int id);
         List<ImageFile> GetListByID(int id);
     }

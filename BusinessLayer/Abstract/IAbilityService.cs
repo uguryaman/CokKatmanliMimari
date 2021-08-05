@@ -11,7 +11,7 @@ namespace BusinessLayer.Abstract
     {
         List<Ability> GetList();
         void AbilityAdd(Ability ability);
-        Category GetByID(int id);
+        Ability GetByID(int id);
         void AbilityDelete(Ability ability);
         void AbilityEdit(Ability ability);
     }

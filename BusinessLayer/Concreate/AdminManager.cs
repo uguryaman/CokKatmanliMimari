@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concreate
 {
-    public class AdminManager: IAdminService
+    public class AdminManager : IAdminService
     {
         IAdminDal _AdminDal;
 
@@ -34,7 +34,7 @@ namespace BusinessLayer.Concreate
                 amdin.AdminRole = admin.AdminRole;
             }
             _AdminDal.Insert(amdin);
-        }       
+        }
 
         public void AdminDelete(Admin admin)
         {
@@ -43,7 +43,18 @@ namespace BusinessLayer.Concreate
 
         public void AdminUpdate(Admin admin)
         {
-            _AdminDal.Update(admin);
+            var crypto = new SimpleCrypto.PBKDF2();
+            var encryedPassword = crypto.Compute(admin.AdminPassword);
+
+            var amdin = new Admin();
+
+            amdin.AdminID = admin.AdminID;
+            amdin.AdminUserName = admin.AdminUserName;
+            amdin.AdminPassword = encryedPassword;
+            amdin.AdminSalt = crypto.Salt.ToString();
+            amdin.AdminRole = admin.AdminRole;
+
+            _AdminDal.Update(amdin);
         }
 
         public void DogruMu(Admin admin)

@@ -84,6 +84,14 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item has-treeview">
+                            <a href="~/Calender/Index" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                <p>
+                                    Takvim
+                                </p>
+                            </a>
+                        </li>
                         @if (User.IsInRole("A"))
                         {
                             <li class="nav-item has-treeview">
@@ -106,7 +114,7 @@
                                 </a>
                             </li>
                         }
-                       
+
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-chart-pie"></i>
@@ -154,8 +162,17 @@
                             </a>
 
                         </li>
+                        <li class="nav-item has-treeview">
+                            <a href="/Heading/HeadingReports" class="nav-link">
+                                <i class="nav-icon fas fa-bars"></i>
+                                <p>
+                                    Raporlar
+                                </p>
+                            </a>
+
+                        </li>
                         <li class="nav-item">
-                            <a href="pages/calendar.html" class="nav-link">
+                            <a href="~/Loginn/Admin" class="nav-link">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
                                     Yetkilendirmeler
@@ -208,9 +225,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="~/Sertifika/YetenekEkle" class="nav-link">
+                                    <a href="~/Sertifika/AddSertifika" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Yetenek Ekle</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="~/Sertifika/YetenekDüzenle" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Yetenek Düzenle</p>
                                     </a>
                                 </li>
 
@@ -219,7 +242,7 @@
                         @if (User.IsInRole("A"))
                         {
                             <li class="nav-item has-treeview">
-                                <a href="~/Admin/AddAdmin" class="nav-link">
+                                <a href="~/Loginn/AddAdmin" class="nav-link">
                                     <i class="nav-icon fas fa-tree"></i>
                                     <p>
                                         Admin Ekle

@@ -1,0 +1,29 @@
+﻿@model List<EntityLayer.Concreate.Admin>
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Admin</h2><br />
+<a class="btn btn-success" href="~/Loginn/AddAdmin">Yeni Admin</a>
+<br /><br />
+<div class="container">
+    <table class="table table-active">
+        <tr>
+            <th>Admin</th>
+            <th>Yetki</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AdminUserName</td>
+                <td>@item.AdminRole</td>
+                <td><a class="btn btn-success" href="~/Loginn/AdminDüzenle/@item.AdminID">Düzenle</a></td>
+                <td><a class="btn btn-danger" href="~/Loginn/AdminSil/@item.AdminID">Sil</a></td>
+            </tr>
+        }
+    </table>
+</div>

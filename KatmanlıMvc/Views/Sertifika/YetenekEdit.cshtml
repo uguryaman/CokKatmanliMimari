@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concreate.Ability
+
+@{
+    ViewBag.Title = "YetenekEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YetenekEdit</h2>
+
+
+
+
+<div class="container">
+    @using (Html.BeginForm("YetenekEdit", "Sertifika", FormMethod.Post))
+    {
+    <div class="form-group">
+        @Html.HiddenFor(x => x.AbilityID)
+
+        @Html.Label("Yetenek Adı")
+        @Html.TextBoxFor(x => x.AbilityName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AbilityName)
+        <br /><br />
+        @Html.Label("Değer")
+        @Html.TextBoxFor(x => x.AbilityValue, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AbilityValue)
+        <br /><br />
+
+        <input type="submit" value="Create" class="btn btn-default" />
+        <br />
+        @Html.ActionLink("Geri Dön", "Index")
+    </div>
+    }
+</div>
+

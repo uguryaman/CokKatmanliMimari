@@ -20,6 +20,11 @@ namespace KatmanlıMvc.Controllers
             var value = hm.GEtlist();
             return View(value);
         }
+        public ActionResult HeadingReports()
+        {
+            var value = hm.GEtlist();
+            return View(value);
+        }
         [HttpGet]
         public ActionResult HeadingAdd()
         {

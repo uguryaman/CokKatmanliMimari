@@ -1,0 +1,28 @@
+﻿@model List<EntityLayer.Concreate.Ability> 
+@{
+    ViewBag.Title = "YetenekDüzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Düzenle</h2>
+
+<div class="container">
+    <table class="table table-active">
+        <tr>
+            <th>Yetenek</th>
+            <th>Değer</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AbilityName</td>
+                <td>@item.AbilityValue</td>
+                <td><a class="btn btn-success" href="~/Sertifika/YetenekEdit/@item.AbilityID">Düzenle</a></td>
+                <td><a class="btn btn-danger" href="~/Sertifika/YetenekSil/@item.AbilityID">Sil</a></td>
+            </tr>
+        }
+    </table>
+</div>

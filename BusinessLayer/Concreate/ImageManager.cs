@@ -17,17 +17,17 @@ namespace BusinessLayer.Concreate
             _ımageDal = ımageDal;
         }
 
-        public void AboutAdd(ImageFile ımageFile)
+        public void ImageAdd(ImageFile ımageFile)
         {
             _ımageDal.Insert(ımageFile);
         }
 
-        public void AboutDelete(ImageFile ımageFile)
+        public void ImageDelete(ImageFile ımageFile)
         {
             _ımageDal.Delete(ımageFile);
         }
 
-        public void AboutUpdate(ImageFile ımageFile)
+        public void ImageUpdate(ImageFile ımageFile)
         {
             _ımageDal.Update(ımageFile);
         }

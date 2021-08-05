@@ -28,19 +28,19 @@ namespace BusinessLayer.Concreate
 
         public void AbilityDelete(Ability ability)
         {
-            throw new NotImplementedException();
+            _abilityDal.Delete(ability);
         }
 
         public void AbilityEdit(Ability ability)
         {
-            throw new NotImplementedException();
+            _abilityDal.Update(ability);
         }
 
-        public Category GetByID(int id)
+        public Ability GetByID(int id)
         {
-            throw new NotImplementedException();
+            return _abilityDal.Get(x=>x.AbilityID==id);
         }
 
-       
+
     }
 }

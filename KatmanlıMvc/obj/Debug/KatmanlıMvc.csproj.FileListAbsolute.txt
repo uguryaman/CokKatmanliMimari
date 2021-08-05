@@ -99,3 +99,5 @@ C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.dll
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.Mvc.dll
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.xml
 C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\PagedList.Mvc.xml
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\DocumentFormat.OpenXml.dll
+C:\Users\hp\source\repos\KatmanlıMvc\KatmanlıMvc\bin\DocumentFormat.OpenXml.xml
