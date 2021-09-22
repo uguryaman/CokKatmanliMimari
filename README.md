@@ -8,4 +8,4 @@
 -Generic Repository 
 -DesignPattern 
 -Extension Methot 
--Sql linq Sorguları kullandım. 
+-Sql linq Sorguları kullandım...
